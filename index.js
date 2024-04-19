@@ -1,8 +1,10 @@
 #! /usr/bin/env node
-import inquirer from "inquirer";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
 console.log("\n\twellcome to itxnatashaarif - cli number guessing game\n");
-const rendomnumber = Math.floor(Math.random() * 5 + 1);
-const answers = await inquirer.prompt([
+var rendomnumber = Math.floor(Math.random() * 5 + 1);
+var answers = await inquirer_1.default.prompt([
     {
         name: "userguessenumber",
         type: "number",
